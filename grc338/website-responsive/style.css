@@ -8,10 +8,13 @@ div.home-container {
 	background-size: cover;
 	position: relative;
 	min-height: 100vh;
+	max-width: 80em;
+	margin: auto;
 }
 
 div.container { 
 	max-width: 80em;
+	min-height: 100vh;
 	margin: auto;
 	background-color: rgb(248, 247, 247);
 	position: relative;
