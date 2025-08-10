@@ -14,6 +14,33 @@ div.container {
     padding: 1em;
 }
 
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+section.order ul,
+section.method ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.order ul li,
+section.method ul li {
+	flex: 1 1 14em;
+	margin-right: 3em;
+}
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+section.personal-info ul li label {
+	flex: 0 0 10em;
+}
+
 section.personal-info ul li input[type="text"],
 section ul li input[type="email"],
 section ul li input[type="tel"],
@@ -32,6 +59,11 @@ section p {
 	margin-top: 0;
 }
 
+ h3 {
+	margin-top: 2em;
+	margin-bottom: 0;
+  }
+
 textarea {
 	box-sizing: border-box;
 	display: block;
@@ -44,30 +76,16 @@ textarea {
 	color: #777;
 }
 
-section ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
+@media only screen and (min-width: 40em) {
 
-/* Burger options: 1 column on small screens; 2 columns on wider screens */
-section.order > ul:first-of-type {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 0.5em 1em;
+  div.container {
+    margin: auto;
+  }
 }
+	
+@media only screen and (min-width: 40em) {
 
-section.order > ul:first-of-type li {
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
-}
-
-@media (min-width: 40em) {
-	section.order > ul:first-of-type {
-		grid-template-columns: 1fr 1fr;
-	}
+  div.container {
+    margin: auto;
+  }
 }
