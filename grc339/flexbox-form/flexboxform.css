@@ -39,6 +39,7 @@ section.personal-info ul li {
 
 section.personal-info ul li label {
 	flex: 0 0 10em;
+	width: 10em;
 }
 
 section.personal-info ul li input[type="text"],
@@ -60,8 +61,7 @@ section p {
 }
 
  h3 {
-	margin-top: 2em;
-	margin-bottom: 0;
+	margin: 2em 0 0 0;
   }
 
 textarea {
@@ -76,13 +76,6 @@ textarea {
 	color: #777;
 }
 
-@media only screen and (min-width: 40em) {
-
-  div.container {
-    margin: auto;
-  }
-}
-	
 @media only screen and (min-width: 40em) {
 
   div.container {
