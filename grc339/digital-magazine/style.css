@@ -1,196 +1,173 @@
-/*CSS document*/
-
-html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
-
+html,body,div,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin:0;
+  padding:0;
+  border:0;
+  font:inherit;
+  font-size:100%;
+}
 img {
-    width: 100%;
-    display: block;
+  display:block;
+  width:100%;
 }
-  
-div.container {
-    max-width: 40em;
-    margin: auto;
-}
-
-p {
-    font-family: sans-serif;
-    margin: 0 .3em 1em .4em;
-}
-
 a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  text-decoration:none;
+  color:rgb(10,10,10);
 }
-
-img {
-    width: 100%;
-    display: block;
+p {
+  font-family:sans-serif;
+  font-weight:400;
+  margin:0 0.35em 1.75em 0.35em;
+  line-height:1.45;
 }
-
-h1 {
-    max-width: 6em;
-    margin: 1em .5em;
-}
-
-nav {
-    margin: 1em .5em;
-}
-
-nav ul li {
-    list-style-type: none;
-	margin-bottom: .2em;
-}
-
-nav ul li a {
-    color: rgb(90, 113, 139);
-    font-family: sans-serif;
-    font-weight: bold;
-}
-
-nav ul li a:hover{
-color: #f00;
-}
-
-h2 {
-    font-family: serif;
-    color: rgb(90, 113, 139);
-    font-weight: bold;
-    font-size: 2em;
-    margin-left: .1em;
-}
-
-section.mainstory h2 {
-    font-size: 4em;
-    margin-left: .1em;
-}
-
-section.tertiarystory h2 {
-    border-top: 1px solid #000; 
-    padding: .4em 0 0 .2em;
-    font-size: 1.3em;
-}
-
-footer {
-    background-color: rgb(92, 120, 151);
-    color: rgb(255, 255, 255);
-    padding: .5em;
-}
-
-footer p {
-    margin: .3em .1em;
-}
-
-article h2 {
-    font-size: 2.5em;
-    margin: 1em 0 .5em .1em;
-}
-
-section.tertiary-story p {
-    line-height: 1.2em;
-}
-
 figcaption {
-    font-style: italic;
-    font-family: sans-serif;
-    margin: .3em 0 1em .3em;
-    color: rgb(90, 90, 90);
+  font-family:sans-serif;
+  font-style:italic;
+  color:rgb(96,96,96);
+  margin:0.4em 0 0.9em 0.35em;
 }
-
+div.home-container,div.container {
+  max-width:42em;
+  margin:auto;
+}
 aside {
-    background-color: rgb(204, 208, 251);
-    padding: 1em .5em;
-    padding-bottom: 2.5em;
+  background-color:rgb(210,214,252);
+  padding:1.25em 0.6em;
 }
-
+footer {
+  background-color:rgb(88,114,150);
+  color:rgb(255,255,255);
+  padding:0.6em;
+  box-sizing:border-box;
+}
+h1 {
+  width:7.25em;
+  margin:1em 0.5em;
+}
+h2 {
+  font-family:serif;
+  color:rgb(88,114,150);
+  font-weight:600;
+  font-size:1.75em;
+  margin:0.3em 0 0.3em 0.15em;
+}
 aside h2 {
-    font-size: 1.2em;
-    margin: .3em;
+  font-size:1.15em;
+  margin:0.25em 0;
 }
-
-@media only screen and (min-width: 60em) {
-div.home-container {
-max-width: 80em;
-padding: 0 1em;
-display:grid;
-grid-template-columns: 3fr 1fr;
-grid-gap: 1em;
+article h2 {
+  font-size:2.4em;
+  margin:0.9em 0 0.3em;
 }
-
+section.main-story h2 {
+  font-size:2.7em;
+}
+section.third-story h2 {
+  font-size:1.15em;
+  border-top:1px solid rgb(132,151,176);
+  padding-top:0.5em;
+}
+nav {
+  margin:0.6em;
+}
+nav ul li {
+  list-style-type:none;
+}
+nav ul li a {
+  color:rgb(84,110,142);
+  font-family:sans-serif;
+  font-weight:700;
+  text-decoration:none;
+}
+article p {
+  margin-bottom:0.9em;
+}
+section.main-story p,section.second-story p {
+  margin-bottom:0.55em;
+}
+section.third-story p {
+  line-height:1.05em;
+}
+@media only screen and (min-width:40em) {
+  nav ul li {
+  display:inline;
+  margin-right:1.1em;
+}
+figcaption {
+  margin:0.3rem 0 0.95rem;
+}
+header,h2,p {
+  margin:0.25rem 0 0;
+}
+}@media only screen and (min-width:60em) {
+  div.home-container {
+  max-width:82em;
+  padding:0 1em;
+  display:grid;
+  grid-template-columns:2.75fr 1fr;
+  grid-gap:1.1em;
+}
 div.container {
-max-width: 60em;
-padding: 0 1em;
-display:grid;
-grid-gap: 1em;
+  max-width:62em;
+  padding:0 1em;
+  display:grid;
+  grid-template-columns:3fr 1fr;
+  grid-gap:1.1em;
 }
-header, footer {
-grid-column: 1/3;
+div.home-container aside {
+  background:none;
+  padding:0;
+  margin-top:0;
+}
+header,footer {
+  grid-column:1 / 3;
 }
 div.home-container main {
-display: grid;
-grid-gap: 1em;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:1.1em;
 }
-div.home-container aside{
-background: none;
-padding: 0;
-margin-top: 0;
+section.main-story {
+  grid-column:2 / 4;
+  grid-row:1 / 3;
+  display:flex;
 }
-div.container aside{
-margin-top: 0;
+section.main-story a {
+  display:flex;
+  flex:1 0 12em;
+  flex-direction:column;
 }
-section.mainstory {
-grid-column: 2/4;
-grid-row: 1/3;
-display: flex;
+section.main-story a figure {
+  display:flex;
+  flex:1 0 12em;
 }
-section.mainstory a{
-flex: 1 0 12em;
-display: flex;
-flex-direction: column;
+section.main-story a figure img {
+  object-fit:cover;
 }
-section.mainstory a figure{
-flex: 1 0 12em;
-display: flex;
+section.main-story h2 {
+  flex:0 0 1em;
 }
-section.mainstory a figure img{
-object-fit: cover;
+section.main-story p {
+  flex:0 0 4.2em;
 }
-section.mainstory a h2{
-flex: 0 0 1em;
+section.second-story {
+  display:flex;
 }
-section.mainstory a p{
-flex: 0 0 4em;
+section.second-story a {
+  display:flex;
+  flex:1 0 12em;
+  flex-direction:column;
 }
-section.secondary {
-display: flex;
+section.second-story a figure {
+  display:flex;
+  flex:1 0 12em;
 }
-section.secondary a{
-flex: 1 0 11em;
-display: flex;
-flex-direction: column;
+section.second-story a figure img {
+  object-fit:cover;
 }
-section.secondary a figure{
-flex: 1 0 12em;
-display: flex;
+section.second-story h2 {
+  flex:0 0 1em;
 }
-section.secondary a figure img{
-object-fit: cover;
-}
-section.secondary a h2{
-flex: 0 0 1em;
-}
-section.secondary a p{
-flex: 0 0 4em;
-}
-nav ul li{
-display: inline;
-margin-right: 1em;
-margin-left: 0;
-}
-nav{
-margin-bottom: 0em;
-}
-	
-section {
-        margin-bottom: 2em;
+section.second-story p {
+  flex:0 0 4.2em;
 }
 }
