@@ -7,70 +7,88 @@
 	 	<link rel="stylesheet" href="https://use.typekit.net/hpf3vab.css">
 	  <link rel="stylesheet" href="https://use.typekit.net/hpf3vab.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Newsletter</title>
+    <title>Photo Gallery</title>
   </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1><a href="index.html"><img src="logo.svg" alt="A Night in the Café logo"></a></h1>
-        <nav>
-          <ul>
-            <li><a href="#">Coffee</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="photogallery.html">Gallery</a></li>
-            <li><a href="newsletter.html">Newsletter</a></li>
-          </ul>
-        </nav>
-      </header>
+ 
+	<body>
+      <div class="gallery-container">
+         <header>
+            <h1><a href="index.html"><img src="logo.svg" alt="A Night in the Café logo"></a></h1>
+            <nav>
+               <ul>
+				<li><a href="#">Coffee</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Locations</a></li>
+				<li><a href="photogallery.html">Gallery</a></li>
+				<li><a href="newsletter.html">Newsletter</a></li>
+               </ul>
+            </nav>
+         </header>
 
-      <main class="newsletter" aria-label="Subscribe to our newsletter">
-        <h3>Subscribe to Our Newsletter</h3>
-        <p>Be notified for our next event</p>
+         <div class="gallery">
+            <input type="radio" name="item" id="photo1" checked="checked">
+            <input type="radio" name="item" id="photo2">
+            <input type="radio" name="item" id="photo3">
+            <input type="radio" name="item" id="photo4">
+            <input type="radio" name="item" id="photo5">
+            <input type="radio" name="item" id="photo6">
+            <input type="radio" name="item" id="photo7">
+            <input type="radio" name="item" id="photo8">
 
-        <section class="personal-info"> 
-			<h2>Personal Information</h2>
-		  <form class="subscribe-form" action="#" method="post">
-          <div class="form-row">
-            <label for="name">Full Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
-          </div>
-		  <div class="form-row">
-            <label for="name">Phone</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required />
-          </div>
-		  </form>
-	    </section>
-			
-          <div class="form-row form-row-inline">
-			  <p>What Would You Like To See More?</p>
-            <div class="checkbox">
-              <input id="stories" name="topics" type="checkbox" value="stories" checked />
-              <label for="stories">Stories</label>
-            </div>
-            <div class="checkbox">
-              <input id="events" name="topics" type="checkbox" value="events" />
-              <label for="events">Events</label>
-            </div>
-            <div class="checkbox">
-              <input id="playlists" name="topics" type="checkbox" value="playlists" />
-              <label for="playlists">Playlists</label>
-            </div>
-          </div>
+            <main>
+               <h2>Gallery: A Night in the Café</h2>
+               <article>
+                  <figure>
+                     <img src="cafe-at-night.jpeg" alt="Outdoor café lights in a quiet alley at night.">
+                     <figcaption>Under warm bulbs, conversations linger past closing time.</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="dining.jpeg" alt="Candlelit restaurant interior.">
+                     <figcaption>Movement and murmurs blur into a rhythm of late dining.</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="coffee-art.jpeg" alt="Latte art in a ceramic cup placed on a wooden table.">
+                     <figcaption>Every pour holds a ritual, etched in milk and steam.</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="books-1.jpeg" alt="Lit café with bookshelves and seating by candles.">
+                     <figcaption>Stories on the shelves mirror the ones unfolding over coffee.</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="vinyl.jpeg" alt="Vinyl records displayed outside a shop at night.">
+                     <figcaption>Music spills into the street, weaving with the scent of roasted beans.</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="interior.jpeg" alt="Café interior with hanging lights, wine glasses.">
+                     <figcaption>Inside, reflections shimmer like the conversations they host.</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="community.jpeg" alt="Crowd gathered watching an outdoor movie at dusk.">
+                     <figcaption>Shared moments turn strangers into a community of night dwellers.</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="gathering.jpeg" alt="Friends seated at an outdoor café.">
+                     <figcaption>Gatherings after dusk keep the pulse of the café alive.</figcaption>
+                  </figure>
+               </article>
+            </main>
 
-          <div class="form-row">
-            <button type="submit" class="btn">Subscribe</button>
-          </div>
-      </main>
+            <nav>
+              <label for="photo1"><img src="cafe-at-night.jpeg" alt="Outdoor café lights in a quiet alley at night."></label>
+               <label for="photo2"><img src="dining.jpeg" alt="Candlelit restaurant interior."></label>
+               <label for="photo3"><img src="coffee-art.jpeg" alt="Latte art in a ceramic cup placed on a wooden table."></label>
+               <label for="photo4"><img src="books-1.jpeg" alt="Lit café with bookshelves and seating by candles."></label>
+               <label for="photo5"><img src="vinyl.jpeg" alt="Vinyl records displayed outside a shop at night."></label>
+               <label for="photo6"><img src="interior.jpeg" alt="Café interior with hanging lights, wine glasses."></label>
+               <label for="photo7"><img src="community.jpeg" alt="Crowd gathered watching an outdoor movie at dusk."></label>
+               <label for="photo8"><img src="gathering.jpeg" alt="Friends seated at an outdoor café."></label>
+            </nav>
+         </div>
 
-      <footer>
-        <p>All rights reserved.</p>
-      </footer>
-    </div>
-  </body>
+         <footer>
+            <p>All rights reserved.</p>
+         </footer>
+      </div>
+   </body>
 </html>
