@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    	<link rel="stylesheet" href="https://use.typekit.net/hpf3vab.css">
+	 	<link rel="stylesheet" href="https://use.typekit.net/hpf3vab.css">
+	  <link rel="stylesheet" href="https://use.typekit.net/hpf3vab.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Newsletter</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="index.html"><img src="logo.svg" alt="A Night in the Café logo"></a></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Coffee</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="photogallery.html">Gallery</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="newsletter" aria-label="Subscribe to our newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Be notified for our next event</p>
+
+        <section class="personal-info"> 
+			<h2>Personal Information</h2>
+		  <form class="subscribe-form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+		  <div class="form-row">
+            <label for="name">Phone</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+		  </form>
+	    </section>
+			
+          <div class="form-row form-row-inline">
+			  <p>What Would You Like To See More?</p>
+            <div class="checkbox">
+              <input id="stories" name="topics" type="checkbox" value="stories" checked />
+              <label for="stories">Stories</label>
+            </div>
+            <div class="checkbox">
+              <input id="events" name="topics" type="checkbox" value="events" />
+              <label for="events">Events</label>
+            </div>
+            <div class="checkbox">
+              <input id="playlists" name="topics" type="checkbox" value="playlists" />
+              <label for="playlists">Playlists</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn">Subscribe</button>
+          </div>
+      </main>
+
+      <footer>
+        <p>All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
